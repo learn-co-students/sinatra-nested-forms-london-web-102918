@@ -1,1 +1,27 @@
-<h1>Make your form here</h1>
+<h1>Welcome to the Nested Forms Lab!</h1>
+
+<form action="/pirates" method="post">
+  <h3><label for="pirate[name]"></label></h3>
+  <h3>Pirate Name: <input type="text" name="pirate[name]" value=""></h3>
+  <h3><label for="pirate[weight]"></label></h3>
+  <h3>Pirate's Weight: <input type="text" name="pirate[weight]" value=""> </h3>
+  <h3><label for="pirate[height]"></label></h3>
+  <h3>Pirate's Height: <input type="text" name="pirate[height]" value=""></h3>
+  <br>
+
+  <label for="pirate[ships][][name]"></label>
+  <h3>Ship 1 Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]" value=""></h3>
+  <label for="pirate[ships][][type]"></label>
+  <h3>Ship 1 Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]" value=""></h3>
+  <label for="pirate[ships][][booty]"></label>
+  <h3>Ship 1 Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]" value=""></h3>
+
+  <h3>Ship 2 Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]" value=""></h3>
+  <label for="pirate[ships][][type]"></label>
+  <h3>Ship 2 Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]" value=""></h3>
+  <label for="pirate[ships][][booty]"></label>
+  <h3>Ship 2 Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]" value=""></h3>
+
+  <input type="submit" value="Submit">
+
+</form>
